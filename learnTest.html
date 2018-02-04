@@ -2,39 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>learnTest</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="">
-        <section class="col-1-3">learing</section><!--
-     --><section class="col-1-3">CSS设置和选择器</section><!--
-     --><section class="col-1-3"><button><img src="assets/img/list.png" alt=""></button></section>
+    <header>
+        <section class="col-1-4 logo">learing</section><!--
+     --><section class="col-1-2 subject">CSS设置和选择器</section><!--
+     --><section class="col-1-4 list"><button><img src="assets/img/list.png" alt="!"></button></section>
     </header>
 
     <section class="container">
-        <section><p>网页开发中，一般需要判断浏览器类型，需通过userAgent中获取浏览器内核来判断，下列说法错误的是?</p></section>
-        <section>
-            <p>一直到IE9,都是Trident内核</p>
-        </section>
-        <section>
-            <p>firefox是Gecko内核</p>
-        </section>
-        <section>
-            <p>chrome是webkit内核</p>
-        </section>
-        <section>
-            <p>IE是目前最快的浏览器</p>
-        </section>
+        <article class="ar-content">
+                <section class="question"><p>网页开发中，一般需要判断浏览器类型，需通过userAgent中获取浏览器内核来判断，下列说法错误的是?</p></section>
+                <section class="answer">
+                    <p>一直到IE9,都是Trident内核</p>
+                </section>
+                <section class="answer">
+                    <p>firefox是Gecko内核</p>
+                </section>
+                <section class="answer">
+                    <p>chrome是webkit内核</p>
+                </section>
+                <section class="answer">
+                    <p>IE是目前最快的浏览器</p>
+                </section>
+        </article>
     </section>
 
     <footer>
-       <section><button>上一题</buttona></section>
-        <section>1/10</section>
-        <section><button>下一题</button></section>
+       <section class="col-1-3"><a class="btn-previous">上一题</a></section><!--
+    --><section class="col-1-3"><span id="nowPage">1</span>/<span id="totalPage">10</span></section><!--
+     --><section class="col-1-3"><a class="btn-next">下一题</a></section>
     </footer>
     <script src="assets/js/layout.js"></script>
+    <script src="assets/js/learn_test.js"></script>
 </body>
 </html>
