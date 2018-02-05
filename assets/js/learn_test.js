@@ -176,19 +176,26 @@ window.addEventListener("load",function(){
 
     var nextQuestion=document.querySelector(".btn-next");
     nextQuestion.addEventListener("click",function(event){
-        questionCount+=1;
-        addContent(questionCount,answerElement,allQuestions);
-        isAlready(questionCount,answerElement,allQuestions); 
+        if(questionCount<allQuestions.length-1){
+            questionCount+=1;
+            addContent(questionCount,answerElement,allQuestions);
+            isAlready(questionCount,answerElement,allQuestions); 
+            document.querySelector("#nowPage").innerText=questionCount+1;
+        }
     },false);
 
     var previousQuestion=document.querySelector(".btn-previous");
     previousQuestion.addEventListener("click",function(event){
-        questionCount-=1;
-        addContent(questionCount,answerElement,allQuestions);
-        isAlready(questionCount,answerElement,allQuestions);
+        if(questionCount!==0){
+            questionCount-=1;
+            addContent(questionCount,answerElement,allQuestions);
+            isAlready(questionCount,answerElement,allQuestions);
+            document.querySelector("#nowPage").innerText=questionCount+1;
+        }
     },false);
 
 
     var totalPage=document.querySelector("#totalPage");
     totalPage.innerText=allQuestions.length;
+    document.querySelector("#nowPage").innerText=questionCount+1;
 },false);
