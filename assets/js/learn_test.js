@@ -8,8 +8,6 @@ globalObject.allQuestions = [
            "一直到IE9,都是Trident内核",
            "firefox是Gecko内核",
            "chrome是webkit内核",
-           "IE是目前最快的浏览器",
-           "IE是目前最快的浏览器",
            "IE是目前最快的浏览器"],
         correctAnswer: 3,
         alreadySelect:-1

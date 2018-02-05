@@ -227,10 +227,11 @@ footer section{
 
 .answer p{
     margin: 0 auto;
+    width: 100%;
 }
 
 .ar-content{
-    margin: 0 auto;
+    margin: 1.2rem auto;
     width: 100%;
 }
 
