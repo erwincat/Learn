@@ -8,6 +8,8 @@ globalObject.allQuestions = [
            "一直到IE9,都是Trident内核",
            "firefox是Gecko内核",
            "chrome是webkit内核",
+           "IE是目前最快的浏览器",
+           "IE是目前最快的浏览器",
            "IE是目前最快的浏览器"],
         correctAnswer: 3,
         alreadySelect:-1
@@ -176,7 +178,7 @@ window.addEventListener("load",function(){
 
     var nextQuestion=document.querySelector(".btn-next");
     nextQuestion.addEventListener("click",function(event){
-        if(questionCount<allQuestions.length-1){
+        if(questionCount<allQuestions.length-1 && allQuestions[questionCount].alreadySelect>=0){
             questionCount+=1;
             addContent(questionCount,answerElement,allQuestions);
             isAlready(questionCount,answerElement,allQuestions); 
